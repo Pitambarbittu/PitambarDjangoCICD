@@ -3,7 +3,7 @@ name: PitambarDjangoCICD
 on:
   push:
     branches:
-      - "main"
+      - "master"
   workflow_dispatch:
     
 
@@ -30,4 +30,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/JangoCICD:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/jango-cicd:latest
